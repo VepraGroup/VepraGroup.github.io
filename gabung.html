@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabung Reseller atau Supplier — VepraCuan</title>
+  <meta name="description" content="Daftar jadi reseller kartu NFC Google Review atau bermitra sebagai supplier kartu bersama VepraCuan.">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gabung VepraCuan — Reseller & Supplier Kartu NFC Google Review">
+  <meta property="og:description" content="Isi formulir singkat, admin kami akan menghubungimu lewat WhatsApp.">
+  <meta property="og:image" content="https://vepracuan.com/img/kartu-produk.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="VepraCuan, ke beranda">
+        <img src="img/favicon.svg" alt="" width="32" height="32"><span>Vepra<b>Cuan</b></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Menu utama">
+        <ul>
+          <li><a href="index.html#produk">Produk</a></li>
+          <li><a href="index.html#paket">Paket</a></li>
+          <li><a href="index.html#cara-kerja">Cara Kerja</a></li>
+          <li><a href="index.html#hitung-cuan">Hitung Cuan</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+        <a href="gabung.html" class="btn btn-primary btn-sm" aria-current="page">Gabung Sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Beranda</a> / Gabung</p>
+        <h1>Gabung bersama VepraCuan</h1>
+        <p>Isi formulir singkat di bawah. Setelah terkirim, kamu bisa langsung lanjut chat dengan admin lewat WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="join tabs" data-tabs id="join-tabs">
+          <div class="tablist" role="tablist" aria-label="Pilih jalur pendaftaran">
+            <button class="tab" role="tab" id="tab-reseller" aria-controls="panel-reseller" aria-selected="true">Daftar Reseller</button>
+            <button class="tab" role="tab" id="tab-mitra" aria-controls="panel-mitra" aria-selected="false" tabindex="-1">Daftar Jadi Supplier/Mitra</button>
+          </div>
+
+          <!-- ============ FORM RESELLER ============ -->
+          <div class="tabpanel" role="tabpanel" id="panel-reseller" aria-labelledby="tab-reseller">
+            <div class="card form-card">
+              <form id="form-reseller" data-tipe="reseller" novalidate>
+                <h2>Daftar sebagai reseller</h2>
+                <p>Untuk kamu yang ingin menjual kartu NFC Google Review ke bisnis lokal.</p>
+                <div class="form-alert" role="alert"></div>
+
+                <!-- Jebakan spam: disembunyikan, manusia tidak akan mengisinya -->
+                <div class="hp-field" aria-hidden="true">
+                  <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                </div>
+
+                <div class="field">
+                  <label for="r-nama">Nama lengkap <span class="req">*</span></label>
+                  <input class="input" id="r-nama" name="nama" type="text" autocomplete="name" required maxlength="80">
+                  <span class="error-msg">Nama wajib diisi.</span>
+                </div>
+                <div class="grid-2">
+                  <div class="field">
+                    <label for="r-wa">Nomor WhatsApp <span class="req">*</span></label>
+                    <input class="input" id="r-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required data-wa-field>
+                    <span class="error-msg">Masukkan nomor WhatsApp Indonesia yang valid, contoh 081234567890.</span>
+                  </div>
+                  <div class="field">
+                    <label for="r-kota">Kota <span class="req">*</span></label>
+                    <input class="input" id="r-kota" name="kota" type="text" autocomplete="address-level2" required maxlength="60">
+                    <span class="error-msg">Kota wajib diisi.</span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="r-pengalaman">Pengalaman jualan <span class="req">*</span></label>
+                  <select class="input" id="r-pengalaman" name="pengalaman" required>
+                    <option value="">Pilih salah satu</option>
+                    <option>Belum pernah jualan</option>
+                    <option>Pernah jualan online</option>
+                    <option>Pernah jualan langsung / offline</option>
+                    <option>Sudah punya usaha sendiri</option>
+                  </select>
+                  <span class="error-msg">Pilih pengalaman jualanmu.</span>
+                </div>
+                <fieldset class="field" style="border:0;padding:0;margin:0 0 22px">
+                  <legend class="label">Paket yang diminati <span class="req">*</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="paket" value="Reseller Pro" required><span><strong>Reseller Pro — Rp68.000</strong><span>Akses supplier + panduan lengkap cari klien sampai closing</span></span></label>
+                    <label class="choice"><input type="radio" name="paket" value="Akses Supplier"><span><strong>Akses Supplier — Rp49.000</strong><span>Kontak supplier, panduan aktivasi, grup reseller</span></span></label>
+                    <label class="choice"><input type="radio" name="paket" value="Belum yakin"><span><strong>Belum yakin</strong><span>Mau tanya-tanya dulu ke admin</span></span></label>
+                  </div>
+                  <span class="error-msg">Pilih paket yang kamu minati.</span>
+                </fieldset>
+
+                <button class="btn btn-primary btn-block" type="submit">Kirim Pendaftaran</button>
+                <p class="small muted" style="margin:12px 0 0;text-align:center">Dengan mengirim formulir, kamu menyetujui <a href="kebijakan-privasi.html">Kebijakan Privasi</a> kami.</p>
+              </form>
+            </div>
+          </div>
+
+          <!-- ============ FORM SUPPLIER / MITRA ============ -->
+          <div class="tabpanel" role="tabpanel" id="panel-mitra" aria-labelledby="tab-mitra" hidden>
+            <div class="card form-card">
+              <form id="form-supplier" data-tipe="supplier" novalidate>
+                <h2>Daftar jadi supplier / mitra</h2>
+                <p>Untuk produsen atau penyedia kartu NFC yang ingin menyuplai jaringan reseller kami.</p>
+                <div class="form-alert" role="alert"></div>
+
+                <div class="hp-field" aria-hidden="true">
+                  <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                </div>
+
+                <div class="grid-2">
+                  <div class="field">
+                    <label for="s-usaha">Nama usaha <span class="req">*</span></label>
+                    <input class="input" id="s-usaha" name="nama_usaha" type="text" autocomplete="organization" required maxlength="100">
+                    <span class="error-msg">Nama usaha wajib diisi.</span>
+                  </div>
+                  <div class="field">
+                    <label for="s-pic">Nama PIC <span class="req">*</span></label>
+                    <input class="input" id="s-pic" name="pic" type="text" autocomplete="name" required maxlength="80">
+                    <span class="error-msg">Nama penanggung jawab wajib diisi.</span>
+                  </div>
+                  <div class="field">
+                    <label for="s-wa">Nomor WhatsApp <span class="req">*</span></label>
+                    <input class="input" id="s-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required data-wa-field>
+                    <span class="error-msg">Masukkan nomor WhatsApp Indonesia yang valid, contoh 081234567890.</span>
+                  </div>
+                  <div class="field">
+                    <label for="s-kota">Kota <span class="req">*</span></label>
+                    <input class="input" id="s-kota" name="kota" type="text" autocomplete="address-level2" required maxlength="60">
+                    <span class="error-msg">Kota wajib diisi.</span>
+                  </div>
+                  <div class="field">
+                    <label for="s-kapasitas">Kapasitas produksi per bulan <span class="req">*</span></label>
+                    <input class="input" id="s-kapasitas" name="kapasitas_per_bulan" type="number" inputmode="numeric" min="1" step="1" placeholder="contoh: 1000" required>
+                    <span class="hint">Jumlah kartu NFC (pcs) per bulan</span>
+                    <span class="error-msg">Isi kapasitas produksi dengan angka lebih dari 0.</span>
+                  </div>
+                  <div class="field">
+                    <label for="s-harga">Harga per pcs <span class="req">*</span></label>
+                    <div class="input-group">
+                      <span class="addon">Rp</span>
+                      <input class="input" id="s-harga" name="harga_per_pcs" type="number" inputmode="numeric" min="1" step="100" placeholder="contoh: 12000" required>
+                    </div>
+                    <span class="error-msg">Isi harga per pcs dengan angka lebih dari 0.</span>
+                  </div>
+                </div>
+                <fieldset class="field" style="border:0;padding:0;margin:0 0 22px">
+                  <legend class="label">Jenis kartu yang diproduksi <span class="req">*</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="jenis_kartu" value="NFC + QR" required><span><strong>NFC + QR</strong><span>Chip NFC dan kode QR dalam satu kartu</span></span></label>
+                    <label class="choice"><input type="radio" name="jenis_kartu" value="QR saja"><span><strong>QR saja</strong><span>Hanya kode QR, tanpa chip NFC</span></span></label>
+                  </div>
+                  <span class="error-msg">Pilih jenis kartu.</span>
+                </fieldset>
+
+                <button class="btn btn-primary btn-block" type="submit">Kirim Pengajuan Mitra</button>
+                <p class="small muted" style="margin:12px 0 0;text-align:center">Dengan mengirim formulir, kamu menyetujui <a href="kebijakan-privasi.html">Kebijakan Privasi</a> kami.</p>
+              </form>
+            </div>
+          </div>
+
+          <!-- ============ PESAN SUKSES (muncul setelah submit) ============ -->
+          <div class="card success" id="success" hidden tabindex="-1">
+            <span class="icon-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h2 id="success-title">Pendaftaran terkirim</h2>
+            <p id="success-text">Terima kasih! Data kamu sudah kami terima. Biar lebih cepat, lanjutkan obrolan dengan admin lewat WhatsApp.</p>
+            <p class="form-alert info" id="success-test" style="text-align:left"></p>
+            <a class="btn btn-primary" id="success-wa" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+              Lanjut Chat Admin
+            </a>
+            <p style="margin-top:16px"><a href="index.html">Kembali ke beranda</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><img src="img/favicon.svg" alt="" width="32" height="32"><span>Vepra<b>Cuan</b></span></a>
+          <p>Peluang usaha kartu NFC Google Review untuk kamu yang ingin mulai dengan modal kecil.</p>
+        </div>
+        <div>
+          <h4>Jelajahi</h4>
+          <ul>
+            <li><a href="index.html#paket">Paket</a></li>
+            <li><a href="gabung.html">Gabung</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a data-config-href="ACTIVATION_URL" href="https://vepracuan.com/kartu/" target="_blank" rel="noopener">Aktivasi Kartu</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kebijakan</h4>
+          <ul>
+            <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="syarat-ketentuan.html">Syarat &amp; Ketentuan</a></li>
+            <li><a href="kebijakan-refund.html">Kebijakan Refund</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 VepraCuan. Semua hak dilindungi.</span>
+        <span>VepraCuan tidak berafiliasi dengan Google. Google adalah merek dagang Google LLC.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="Halo admin VepraCuan, saya mau tanya soal pendaftaran." href="#" target="_blank" rel="noopener" aria-label="Chat admin via WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>
+    <span class="label">Chat Admin</span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gabung.js"></script>
+</body>
+</html>
