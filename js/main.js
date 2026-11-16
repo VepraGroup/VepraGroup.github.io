@@ -45,6 +45,9 @@
 
   // <a data-wa="pesan"> -> link WhatsApp
   document.querySelectorAll("[data-wa]").forEach(function (el) {
+    // Kalau tombol juga punya data-config-href yang sudah diisi di config.js, pakai link itu
+    var kunci = el.getAttribute("data-config-href");
+    if (kunci && CFG[kunci]) return;
     el.href = waLink(el.getAttribute("data-wa"));
   });
 

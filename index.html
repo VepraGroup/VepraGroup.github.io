@@ -339,6 +339,28 @@
     </section>
 
     <!-- =====================================================
+         5b. UNTUK PEMILIK USAHA — beli kartu langsung
+         Link checkout diatur di js/config.js (CHECKOUT_KARTU_USAHA).
+         ===================================================== -->
+    <section id="pemilik-usaha" class="section">
+      <div class="container">
+        <div class="activation reveal">
+          <div class="inner">
+            <span class="icon-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4zM3 6h18l-1 4H4zM9 14h6"/></svg></span>
+            <div>
+              <h2>Punya usaha? Beli kartunya langsung</h2>
+              <p>Satu kartu NFC + QR untuk meja kasir kafe, resto, salon, atau tokomu. Rp50.000, sudah termasuk bantuan aktivasi ke halaman ulasan Google bisnismu.</p>
+            </div>
+          </div>
+          <a class="btn btn-primary" data-config-href="CHECKOUT_KARTU_USAHA" data-wa="Halo admin VepraCuan, saya pemilik usaha dan mau pesan Kartu Google Review." href="#" target="_blank" rel="noopener">
+            Pesan Kartu
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
          6. CARA KERJA — timeline vertikal
          ===================================================== -->
     <section id="cara-kerja" class="section">
@@ -430,9 +452,10 @@
 
     <!-- =====================================================
          8. TESTIMONI — slider
-         Ganti isi setiap .slide dengan testimoni ASLI (dengan izin orangnya).
+         Ganti isi setiap .slide dengan testimoni ASLI (dengan izin orangnya),
+         lalu HAPUS atribut hidden di bawah supaya bagian ini tampil.
          ===================================================== -->
-    <section id="testimoni" class="section">
+    <section id="testimoni" class="section" hidden>
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Cerita reseller</span>

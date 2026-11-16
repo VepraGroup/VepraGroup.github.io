@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /kartu/
+Disallow: /kelola/
+
+Sitemap: https://vepracuan.com/sitemap.xml

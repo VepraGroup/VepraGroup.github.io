@@ -46,7 +46,7 @@
       <div class="container">
         <p class="breadcrumb"><a href="index.html">Beranda</a> / Gabung</p>
         <h1>Gabung bersama VepraCuan</h1>
-        <p>Isi formulir singkat di bawah. Setelah terkirim, kamu bisa langsung lanjut chat dengan admin lewat WhatsApp.</p>
+        <p>Mau jualan kartu? Langsung pilih paket. Punya usaha produksi kartu NFC? Daftar sebagai supplier/mitra.</p>
       </div>
     </section>
 
@@ -54,64 +54,22 @@
       <div class="container">
         <div class="join tabs" data-tabs id="join-tabs">
           <div class="tablist" role="tablist" aria-label="Pilih jalur pendaftaran">
-            <button class="tab" role="tab" id="tab-reseller" aria-controls="panel-reseller" aria-selected="true">Daftar Reseller</button>
+            <button class="tab" role="tab" id="tab-reseller" aria-controls="panel-reseller" aria-selected="true">Jadi Reseller</button>
             <button class="tab" role="tab" id="tab-mitra" aria-controls="panel-mitra" aria-selected="false" tabindex="-1">Daftar Jadi Supplier/Mitra</button>
           </div>
 
-          <!-- ============ FORM RESELLER ============ -->
+          <!-- ============ JADI RESELLER: cukup beli paket di Lynk ============ -->
+          <!-- Pembeli paket otomatis tercatat di Google Sheet (tab Reseller) lewat email Lynk,
+               jadi tidak perlu formulir pendaftaran terpisah. -->
           <div class="tabpanel" role="tabpanel" id="panel-reseller" aria-labelledby="tab-reseller">
             <div class="card form-card">
-              <form id="form-reseller" data-tipe="reseller" novalidate>
-                <h2>Daftar sebagai reseller</h2>
-                <p>Untuk kamu yang ingin menjual kartu NFC Google Review ke bisnis lokal.</p>
-                <div class="form-alert" role="alert"></div>
-
-                <!-- Jebakan spam: disembunyikan, manusia tidak akan mengisinya -->
-                <div class="hp-field" aria-hidden="true">
-                  <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-                </div>
-
-                <div class="field">
-                  <label for="r-nama">Nama lengkap <span class="req">*</span></label>
-                  <input class="input" id="r-nama" name="nama" type="text" autocomplete="name" required maxlength="80">
-                  <span class="error-msg">Nama wajib diisi.</span>
-                </div>
-                <div class="grid-2">
-                  <div class="field">
-                    <label for="r-wa">Nomor WhatsApp <span class="req">*</span></label>
-                    <input class="input" id="r-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required data-wa-field>
-                    <span class="error-msg">Masukkan nomor WhatsApp Indonesia yang valid, contoh 081234567890.</span>
-                  </div>
-                  <div class="field">
-                    <label for="r-kota">Kota <span class="req">*</span></label>
-                    <input class="input" id="r-kota" name="kota" type="text" autocomplete="address-level2" required maxlength="60">
-                    <span class="error-msg">Kota wajib diisi.</span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label for="r-pengalaman">Pengalaman jualan <span class="req">*</span></label>
-                  <select class="input" id="r-pengalaman" name="pengalaman" required>
-                    <option value="">Pilih salah satu</option>
-                    <option>Belum pernah jualan</option>
-                    <option>Pernah jualan online</option>
-                    <option>Pernah jualan langsung / offline</option>
-                    <option>Sudah punya usaha sendiri</option>
-                  </select>
-                  <span class="error-msg">Pilih pengalaman jualanmu.</span>
-                </div>
-                <fieldset class="field" style="border:0;padding:0;margin:0 0 22px">
-                  <legend class="label">Paket yang diminati <span class="req">*</span></legend>
-                  <div class="choice-group">
-                    <label class="choice"><input type="radio" name="paket" value="Reseller Pro" required><span><strong>Reseller Pro — Rp68.000</strong><span>Akses supplier + panduan lengkap cari klien sampai closing</span></span></label>
-                    <label class="choice"><input type="radio" name="paket" value="Akses Supplier"><span><strong>Akses Supplier — Rp49.000</strong><span>Kontak supplier, panduan aktivasi, grup reseller</span></span></label>
-                    <label class="choice"><input type="radio" name="paket" value="Belum yakin"><span><strong>Belum yakin</strong><span>Mau tanya-tanya dulu ke admin</span></span></label>
-                  </div>
-                  <span class="error-msg">Pilih paket yang kamu minati.</span>
-                </fieldset>
-
-                <button class="btn btn-primary btn-block" type="submit">Kirim Pendaftaran</button>
-                <p class="small muted" style="margin:12px 0 0;text-align:center">Dengan mengirim formulir, kamu menyetujui <a href="kebijakan-privasi.html">Kebijakan Privasi</a> kami.</p>
-              </form>
+              <h2>Jadi reseller cukup pilih paket</h2>
+              <p>Tidak perlu isi formulir. Setelah pembayaran berhasil, akses langsung dikirim dan kamu otomatis terdaftar sebagai reseller VepraCuan.</p>
+              <div class="choice-group" style="margin:20px 0">
+                <a class="btn btn-primary btn-block" data-config-href="CHECKOUT_RESELLER" href="index.html#paket" target="_blank" rel="noopener">Ambil Reseller Pro — Rp68.000</a>
+                <a class="btn btn-outline btn-block" data-config-href="CHECKOUT_SUPPLIER" href="index.html#paket" target="_blank" rel="noopener" style="margin-top:10px">Ambil Akses Supplier — Rp49.000</a>
+              </div>
+              <p class="small muted" style="margin:0;text-align:center">Belum yakin pilih yang mana? <a href="index.html#paket">Bandingkan paket</a> atau <a data-wa="Halo admin VepraCuan, saya mau tanya soal paket reseller." href="#" target="_blank" rel="noopener">tanya admin via WhatsApp</a>.</p>
             </div>
           </div>
 

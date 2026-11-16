@@ -28,6 +28,10 @@ window.VEPRA_CONFIG = {
   // Kalau masih kosong, form di gabung.html jalan dalam "mode uji" (data tidak tersimpan)
   FORM_ENDPOINT: "https://script.google.com/macros/s/AKfycbx4VWR4Dz-tvEznxTHHANgajhbEVhOujMucDNQF-wXeBg542stg8u1r6gHEpDmUxK8s/exec",
 
+  // Link checkout KARTU untuk pemilik usaha (Rp50.000) di Lynk.
+  // Kalau masih kosong, tombol "Pesan Kartu" otomatis membuka chat WhatsApp admin.
+  CHECKOUT_KARTU_USAHA: "",
+
   // Sistem aktivasi kartu yang sudah kamu punya. Biarkan kalau tidak berubah.
   ACTIVATION_URL: "https://vepracuan.com/kartu/",
 
