@@ -30,7 +30,7 @@ window.VEPRA_CONFIG = {
 
   // Link checkout KARTU untuk pemilik usaha (Rp50.000) di Lynk.
   // Kalau masih kosong, tombol "Pesan Kartu" otomatis membuka chat WhatsApp admin.
-  CHECKOUT_KARTU_USAHA: "",
+  CHECKOUT_KARTU_USAHA: "https://lynk.id/vepracuan/4zpoq8dg8x8q",
 
   // Sistem aktivasi kartu yang sudah kamu punya. Biarkan kalau tidak berubah.
   ACTIVATION_URL: "https://vepracuan.com/kartu/",
